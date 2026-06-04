@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Murugan Boutique</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
 
+<body>
+
+
+<header>
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/image3.png') }}" width="80">
+    <h1>Murugan Boutique</h1>
+  </div>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/Services">Service</a>
+    <a href="/contact">Contact</a>
+    <a href="/booking">Booking</a>
+  </nav>
+</header>
+
+
+<section class="about">
+  <h2>About Our Boutique</h2>
+
+  <p>
+    Welcome to <b>Murugan Boutique</b>, your trusted destination for elegant and perfect-fit women's tailoring.
+    With over <b>6+ years of experience</b>, we specialize in custom stitching and modern fashion designs.
+  </p>
+
+  <p>
+    We provide blouse stitching, chudidhar, bridal wear, saree works, aari work,
+    and kids wear. Every design is made with care, precision, and creativity.
+  </p>
+
+  <p>
+    Our mission is to deliver perfect fitting, stylish outfits, and complete customer satisfaction.
+  </p>
+</section>
+
+
+<section class="services">
+  <h2>Our Services & Price</h2>
+
+  <div class="service-box">Blouse Stitching - ₹350</div>
+  <div class="service-box">Saree  Pico - ₹40</div>
+
+  <div class="service-box">Saree  Falls- ₹100</div>
+  <div class="service-box">Chudidhar Stitching - ₹650</div>
+  <div class="service-box">Bridal Blouse - ₹800+</div>
+  <div class="service-box">Aari Work Blouse - ₹550+</div>
+  <div class="service-box">Kids Wear - ₹300+</div>
+</section>
+
+
+<section class="gallery">
+  <h2>Our Designs</h2>
+
+  <img src="{{ url_for('static', filename='images/sample1.jpg') }}">
+  <img src="{{ url_for('static', filename='images/sample2.jpg') }}">
+  <img src="{{ url_for('static', filename='images/sample3.jpg') }}">
+  <img src="{{ url_for('static', filename='images/sample4.jpg') }}">
+</section>
+
+
+<section class="about">
+  <h2>Why Choose Us?</h2>
+
+  <ul>
+    <li>✔ Perfect fitting</li>
+    <li>✔ Affordable price</li>
+    <li>✔ On-time delivery</li>
+    <li>✔ Latest trending designs</li>
+  </ul>
+</section>
+
+
+<footer>
+  <p>© 2026 Murugan Boutique</p>
+</footer>
+
+</body>
+</html>
