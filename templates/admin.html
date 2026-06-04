@@ -1,1 +1,61 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Murugan Boutique</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Admin Dashboard</h1>
+
+<h2>📌 Bookings</h2>
+
+<table border="1" width="100%">
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Phone</th>
+  <th>Service</th>
+  <th>Date</th>
+  <th>Details</th>
+</tr>
+
+{% for b in bookings %}
+<tr>
+  <td>{{ b[0] }}</td>
+  <td>{{ b[1] }}</td>
+  <td>{{ b[2] }}</td>
+  <td>{{ b[3] }}</td>
+  <td>{{ b[4] }}</td>
+  <td>{{ b[5] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+<h2>📩 Contact Messages</h2>
+
+<table border="1" width="100%">
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Phone</th>
+  <th>Message</th>
+</tr>
+
+{% for c in contacts %}
+<tr>
+  <td>{{ c[0] }}</td>
+  <td>{{ c[1] }}</td>
+  <td>{{ c[2] }}</td>
+  <td>{{ c[3] }}</td>
+  <td>{{ c[4] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
