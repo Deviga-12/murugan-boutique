@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Murugan Boutique</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 
+<body>
+
+<header>
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/image3.png') }}">
+    <h1>Murugan Boutique</h1>
+  </div>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/About">About</a>
+    <a href="/Services">Services</a>
+    <a href="/booking">Booking</a>
+  </nav>
+</header>
+
+<section class="contact-page">
+  <h1>Contact Us</h1>
+
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>📞 Phone: 1234567890</p>
+      <p>📧 Email: muruganboutique@gmail.com</p>
+      <p>📍 Location: Virugambakkam, Chennai</p>
+    </div>
+
+
+    <div class="contact-form">
+      <h3>Send Message</h3>
+
+      <form method="POST" action="/contact">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Phone Number">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Murugan Boutique</p>
+</footer>
+
+</body>
+</html>
+<style>
+  body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #fffafa;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #efa2b7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.logo h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+
+.contact-page {
+  text-align: center;
+  padding: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #b30059;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #efa2b7;
+}
+</style>
+</body>
+</html>
