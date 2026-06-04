@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Murugan Boutique</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+
+<header>
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/image3.png') }}" WIDTH="100">
+      <h1>Murugan Boutique</h1>
+  </div>
+
+  <nav>
+    <a href="About">About</a>
+    <a href="Services">Services</a>
+    <a href="contact">Contact</a>
+    <a href="booking">booking</a>
+  </nav>
+</header>
+
+
+<section class="hero">
+  <h1>Custom Stitching Made Easy</h1>
+  <p>Elegant Designs | Perfect Fit | Affordable Price</p>
+  <a href="/booking">
+  <button>Book Now</button>
+</a>
+
+</section>
+
+
+<section class="categories">
+  <h2>Our Categories</h2>
+
+  <div class="cat-box">
+    <h3>Women Tailoring</h3>
+  </div>
+
+  <div class="cat-box">
+    <h3>Kids Wear</h3>
+  </div>
+    <div class="cats-box">
+        <h3>Custom Desgin</h3>
+    </div>
+</section>
+
+
+<section class="gallery">
+  <h2>Featured Designs</h2>
+
+  <img src="{{ url_for('static', filename='images/sample1.jpg') }}">
+  <img src="{{ url_for('static', filename='images/sample2.jpg') }}">
+  <img src="{{ url_for('static', filename='images/sample3.jpg') }}">
+  <img src="{{ url_for('static', filename='images/sample4.jpg') }}">
+</section>
+
+
+<section class="about">
+  <h2>About Our Shop</h2>
+  <p>
+Welcome to <b>Murugan Boutique</b>, your trusted destination for elegant and perfect-fit women's tailoring.
+With over <b>6+ years of experience</b> in the tailoring field, we specialize in creating beautifully
+stitched outfits that combine tradition with modern style.
+</p>
+
+<p>
+At Murugan Boutique, we believe every woman deserves a perfect fit and unique design.
+We offer a wide range of tailoring services including <b>blouse stitching, chudidhar stitching,
+bridal wear, saree works, half saree, and aari work designer blouses</b>. Each outfit is crafted
+with precision, attention to detail, and high-quality finishing.
+</p>
+
+<p>
+Our boutique is well-known for custom designs, where customers can bring their own ideas,
+and we transform them into reality. From simple daily wear to grand bridal collections,
+we ensure every dress reflects elegance and comfort.
+</p>
+
+<p>
+We focus on <b>customer satisfaction, on-time delivery, and affordable pricing</b>.
+Our experienced tailoring team understands the latest fashion trends and works closely
+with customers to deliver exactly what they expect.
+</p>
+
+<p>
+Whether it is a festival, wedding, or casual wear, Murugan Boutique is your one-stop
+solution for all women's tailoring needs. We take pride in making every customer feel
+confident and beautiful in their outfits.
+</p>
+</section>
+
+
+<section class="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="review-box">
+    <p>“Perfect fitting and neat stitching!” ⭐⭐⭐⭐⭐</p>
+  </div>
+
+  <div class="review-box">
+    <p>“Very happy with bridal blouse work ❤️” ⭐⭐⭐⭐⭐</p>
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2026 Murugan Boutique</p>
+</footer>
+
+</body>
+</html>
