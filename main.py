@@ -4,8 +4,8 @@ import mysql.connector
 app = Flask(__name__)
 db = mysql.connector.connect(
     host="localhost",
-    user="root",          # un username
-    password="261205",  # un password
+    user="root",        
+    password="261205",  
     database="tailoring_app"
 )
 
@@ -35,7 +35,7 @@ def booking():
         cursor.execute(query, values)
         db.commit()
 
-        order_id = cursor.lastrowid   # 🔥 MUST INSIDE POST
+        order_id = cursor.lastrowid  
 
         return f"""
         <script>
