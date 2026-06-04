@@ -1,1 +1,188 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgb(186 54 54 / 0.5);
 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgb(255 255 255)),
+              url("images/sample1.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #b30059;
+  color: #f3efef;
+  border: none;
+  margin-top: 10px;
+}
+
+
+.categories {
+  text-align: center;
+  padding: 40px;
+
+}
+
+.cat-box {
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #dd8e8e;
+  border-radius: 10px;
+}
+.cats-box{
+   display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #dd8e8e;
+  border-radius: 10px;
+
+}
+
+
+.gallery {
+  text-align: center;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
+.about {
+  text-align: center;
+  padding: 40px;
+}
+
+.reviews {
+  text-align: center;
+  padding: 40px;
+}
+
+.review-box {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #d38181;
+  display: inline-block;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #eaaab8;
+}
+
+
+
+.booking {
+  text-align: center;
+  padding: 40px;
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.booking button {
+  padding: 10px 20px;
+  background-color: #b30059;
+  color: white;
+  border: none;
+}
+
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+.service-box {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff0f5;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about li {
+  margin: 10px;
+  font-weight: bold;
+}
+
+
+
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+.service-box {
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.service-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service-box p {
+  font-weight: bold;
+  color: #b30059;
+}
