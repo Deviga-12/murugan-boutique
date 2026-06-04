@@ -55,7 +55,7 @@ nav a {
   margin-top: 10px;
 }
 
-/* CATEGORIES */
+
 .categories {
   text-align: center;
   padding: 40px;
@@ -78,7 +78,6 @@ nav a {
 
 }
 
-/* GALLERY */
 .gallery {
   text-align: center;
   padding: 40px;
@@ -90,13 +89,13 @@ nav a {
   border-radius: 10px;
 }
 
-/* ABOUT */
+
 .about {
   text-align: center;
   padding: 40px;
 }
 
-/* REVIEWS */
+
 .reviews {
   text-align: center;
   padding: 40px;
@@ -109,7 +108,6 @@ nav a {
   display: inline-block;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
